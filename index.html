@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="icon" href="rick_icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navegador">
+            <div class="titulo">
+                <h2><a id="inicio" class="nav_titulo" href="index.html" class="rick">
+                        <img class="img_titulo" src="Rick_and_Morty.svg" alt="Rick_and_Morty_logo"></a></h2>
+            </div>
+            <div class="opciones">
+                <ul id="opciones_navegador">
+                    <li class="generos"><a id="todos">Todos</a></li>
+                    <li class="generos"><a id="mujer">Mujeres</a></li>
+                    <li class="generos"><a id="hombre">Hombres</a></li>
+                    <li class="generos"><a id="sinGenero">Sin género</a></li>
+                    <li class="generos"><a id="desconocido">Desconocido</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor_principal">
+        <div class="info_cards">
+            <p id="totalPersonajes">Total de personajes: &nbsp <span id="total_personajes"></span></p>
+        </div>
+        <div class="contendor_personajes">
+
+            <div id="info_personaje"></div>
+
+        </div>
+    </div>
+    <div class="pie_contenedor_general">
+        <p id="pagActual">Página actual: &nbsp <span id="pagina_actual"> </span></p>
+        <p id="totalPag">Total de páginas: &nbsp<span id="total_paginas"> </span></p>
+        <div class="pagination">
+            <button type="button" class="deshabilitado" id="first">
+                <img src="simbolo-de-doble-flecha-izquierda-de-avance-rapido.png" />
+            </button>
+            <button type="button" id="previous_page">
+                <img src="flecha-correcta izquierda.png" />
+            </button>
+            <button type="button" id="next_page">
+                <img src="flecha-correcta.png" />
+            </button>
+            <button type="button" id="last">
+                <img src="simbolo-de-doble-flecha-derecha-de-avance-rapido.png" />
+            </button>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="contenedor_footer">
+                <p id="copyright">@2023 Copyright Marcela Novais</p>
+                <div class="contacto">
+                    <p>Contacto: </p>
+                    <span><a href="https://github.com/Cubitina" target="_blank"><img id="github" src="github_blanco.svg" alt="github logo"></a></span>
+                    <div id="usuario_dis">
+                        <span id="a"><a href="https://discord.com/" target="_blank"><img id="discord" src="discord.png" alt="discord logo"></a></span>
+                        <span>Usuario: cubitina</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
